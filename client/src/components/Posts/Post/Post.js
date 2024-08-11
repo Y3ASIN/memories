@@ -13,7 +13,7 @@ import moment from "moment";
 
 import styles from "./styles";
 
-const Post = ({ post }) => {
+const Post = ({ post, setCurrentId }) => {
   return (
     <Card sx={styles.card}>
       <CardMedia
@@ -29,7 +29,11 @@ const Post = ({ post }) => {
         </Typography>
       </div>
       <div style={styles.overlay2}>
-        <Button sx={{ color: "white" }} size="small" onClick={() => {}}>
+        <Button
+          sx={{ color: "white" }}
+          size="small"
+          onClick={() => setCurrentId(post._id)}
+        >
           {" "}
           <MoreHorizIcon fontSize="default" />{" "}
         </Button>
@@ -40,8 +44,11 @@ const Post = ({ post }) => {
           {post.tags.map((tag) => `#${tag} `)}{" "}
         </Typography>
       </div>
+      <Typography sx={styles.title} variant="h5" gutterBottom>
+        {post.title}
+      </Typography>
       <CardContent>
-        <Typography sx={styles.title} variant="h5" gutterBottom>
+        <Typography variant="body1" gutterBottom>
           {post.message}
         </Typography>
       </CardContent>
