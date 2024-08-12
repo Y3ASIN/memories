@@ -13,6 +13,9 @@ const styles = {
   image: {
     marginLeft: "15px",
   },
+  mainContainer: {
+    flexDirection: { xs: "column-reverse", sm: "row" },
+  },
 };
 
 export default styles;

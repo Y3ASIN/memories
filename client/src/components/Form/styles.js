@@ -1,11 +1,12 @@
 const styles = {
   root: {
     "& .MuiTextField-root": {
-      margin: 1,
+      margin: 0.2,
     },
   },
   paper: {
     padding: 2,
+    margin: 1,
   },
   form: {
     display: "flex",
