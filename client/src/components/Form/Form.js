@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { TextField, Button, Typography, Paper, Box } from "@mui/material";
+import { TextField, Button, Typography, Paper } from "@mui/material";
 import FileBase64 from "react-file-base64";
 
 import styles from "./styles";
