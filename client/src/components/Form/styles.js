@@ -1,7 +1,7 @@
 const styles = {
   root: {
     "& .MuiTextField-root": {
-      margin: 0.2,
+      margin: 0.5
     },
   },
   paper: {
